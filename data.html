@@ -8,6 +8,11 @@
     margin: 0;
     top: 0;
     left;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
   }
   .tooltip {
     color: white;
@@ -26,6 +31,13 @@
     width: 25em;
     height: auto;
 /*    transition: 0.5s ease-in-out;*/
+ }
+  @keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 </style>
 <body>
