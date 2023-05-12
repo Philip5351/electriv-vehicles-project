@@ -1,286 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+  <title></title>
 </head>
 <style type="text/css">
-	html, body {
-		margin: 0;
-		top: 0;
-		left;
-	}
-	.tooltip {
-		color: white;
-		font-family:'Helvetica Neue', sans-serif;
-		font-size:1em;
-		font-weight:800;
-		border:0.5px solid #fff;
-		position:fixed;
-		background-color:black;
-		opacity:0;
-		padding:1%;
-/*		transition:0.25s ease-in-out;*/
-	}
-	.tooltip img {
-		background-color: black;
-		width: 25em;
-		height: auto;
-/*		transition: 0.5s ease-in-out;*/
-	}
+  html, body {
+    margin: 0;
+    top: 0;
+    left;
+  }
+  .tooltip {
+    color: white;
+    font-family:'Helvetica Neue', sans-serif;
+    font-size:1em;
+    font-weight:800;
+    border:0.5px solid #fff;
+    position:fixed;
+    background-color:black;
+    opacity:0;
+    padding:1%;
+/*    transition:0.25s ease-in-out;*/
+  }
+  .tooltip img {
+    background-color: black;
+    width: 25em;
+    height: auto;
+/*    transition: 0.5s ease-in-out;*/
+  }
 </style>
-<section data-test="page-section" data-section-theme="" class="page-section 
-    
-      full-bleed-section
-      layout-engine-section
-    
-    background-width--full-bleed
-    
-      
-        section-height--custom
-      
-    
-    
-      content-width--wide
-    
-    horizontal-alignment--center
-    vertical-alignment--middle
-    
-      
-    
-    
-    " data-section-id="645d97384165964ff93b0bb6" data-controller="SectionWrapperController" data-current-styles="{
-                                                                                &quot;imageOverlayOpacity&quot;: 0.15,
-                                                                                &quot;backgroundWidth&quot;: &quot;background-width--full-bleed&quot;,
-                                                                                &quot;sectionHeight&quot;: &quot;section-height--custom&quot;,
-                                                                                &quot;customSectionHeight&quot;: 10,
-                                                                                &quot;horizontalAlignment&quot;: &quot;horizontal-alignment--center&quot;,
-                                                                                &quot;verticalAlignment&quot;: &quot;vertical-alignment--middle&quot;,
-                                                                                &quot;contentWidth&quot;: &quot;content-width--wide&quot;,
-                                                                                &quot;customContentWidth&quot;: 50,
-                                                                                &quot;sectionTheme&quot;: &quot;&quot;,
-                                                                                &quot;sectionAnimation&quot;: &quot;none&quot;,
-                                                                                &quot;backgroundMode&quot;: &quot;image&quot;
-                                                                              }" data-current-context="{
-                                                                                &quot;video&quot;: {
-                                                                                  &quot;playbackSpeed&quot;: 0.5,
-                                                                                  &quot;filter&quot;: 1,
-                                                                                  &quot;filterStrength&quot;: 0,
-                                                                                  &quot;zoom&quot;: 0,
-                                                                                  &quot;videoSourceProvider&quot;: &quot;none&quot;
-                                                                                },
-                                                                                &quot;backgroundImageId&quot;: null,
-                                                                                &quot;backgroundMediaEffect&quot;: null,
-                                                                                &quot;divider&quot;: null,
-                                                                                &quot;typeName&quot;: &quot;page&quot;
-                                                                              }" data-animation="none" data-fluid-engine-section="" style="min-height: 10vh;" data-controllers-bound="SectionWrapperController" id="yui_3_17_2_1_1683855625262_353" data-active="true">
-  <div class="section-border">
-    <div class="section-background">
-    
-      
-    
-    </div>
-  </div>
-  <div class="content-wrapper" style="
-      
-        
-          
-          
-          padding-top: calc(10vmax / 10); padding-bottom: calc(10vmax / 10);
-        
-      
-    " id="yui_3_17_2_1_1683855625262_352">
-    <div class="content" id="yui_3_17_2_1_1683855625262_351">
-      
-      
-      
-      
-      
-      
-      <div data-fluid-engine="true" id="yui_3_17_2_1_1683855625262_350"><style>.fe-645d97384165964ff93b0bb5 {
-  --grid-gutter: calc(var(--sqs-mobile-site-gutter, 6vw) - 11.0px);
-  --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (8 - 1)) ) / 8 );
-
-  display: grid;
-  position: relative;
-  grid-area: 1/1/-1/-1;
-  grid-template-rows: repeat(17,minmax(24px, auto));
-  grid-template-columns:
-    minmax(var(--grid-gutter), 1fr)
-    repeat(8, minmax(0, var(--cell-max-width)))
-    minmax(var(--grid-gutter), 1fr);
-  row-gap: 11.0px;
-  column-gap: 11.0px;
-}
-
-@media (min-width: 768px) {
-  .background-width--inset .fe-645d97384165964ff93b0bb5 {
-    --inset-padding: calc(var(--sqs-site-gutter) * 2);
-  }
-
-  .fe-645d97384165964ff93b0bb5 {
-    --grid-gutter: calc(var(--sqs-site-gutter, 4vw) - 11.0px);
-    --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (24 - 1)) ) / 24 );
-    --inset-padding: 0vw;
-
-    --row-height-scaling-factor: 0.0215;
-    --container-width: min(var(--sqs-site-max-width, 1500px), calc(100vw - var(--sqs-site-gutter, 4vw) * 2 - var(--inset-padding) ));
-
-    grid-template-rows: repeat(19,minmax(calc(var(--container-width) * var(--row-height-scaling-factor)), auto));
-    grid-template-columns:
-      minmax(var(--grid-gutter), 1fr)
-      repeat(24, minmax(0, var(--cell-max-width)))
-      minmax(var(--grid-gutter), 1fr);
-  }
-}
-
-
-  .fe-block-d0250c7be1494bde3fa3 {
-    grid-area: 2/2/10/10;
-    z-index: 0;
-  }
-
-  .fe-block-d0250c7be1494bde3fa3 .sqs-block {
-    justify-content: center;
-  }
-
-  .fe-block-d0250c7be1494bde3fa3 .sqs-block-alignment-wrapper {
-    align-items: center;
-  }
-
-  @media (min-width: 768px) {
-    .fe-block-d0250c7be1494bde3fa3 {
-      grid-area: 2/2/19/16;
-      z-index: 0;
-    }
-
-    .fe-block-d0250c7be1494bde3fa3 .sqs-block {
-      justify-content: center;
-    }
-
-    .fe-block-d0250c7be1494bde3fa3 .sqs-block-alignment-wrapper {
-      align-items: center;
-    }
-  }
-
-  .fe-block-7b14fe3100bf4518cf53 {
-    grid-area: 11/2/17/10;
-    z-index: 1;
-  }
-
-  .fe-block-7b14fe3100bf4518cf53 .sqs-block {
-    justify-content: flex-start;
-  }
-
-  .fe-block-7b14fe3100bf4518cf53 .sqs-block-alignment-wrapper {
-    align-items: flex-start;
-  }
-
-  @media (min-width: 768px) {
-    .fe-block-7b14fe3100bf4518cf53 {
-      grid-area: 2/18/11/26;
-      z-index: 1;
-    }
-
-    .fe-block-7b14fe3100bf4518cf53 .sqs-block {
-      justify-content: flex-start;
-    }
-
-    .fe-block-7b14fe3100bf4518cf53 .sqs-block-alignment-wrapper {
-      align-items: flex-start;
-    }
-  }
-
-</style><div class="fluid-engine fe-645d97384165964ff93b0bb5" id="yui_3_17_2_1_1683855625262_349"><div class="fe-block fe-block-d0250c7be1494bde3fa3" id="yui_3_17_2_1_1683855625262_348"><div class="sqs-block image-block sqs-block-image sqs-stretched sqs-text-ready" data-block-type="5" id="block-d0250c7be1494bde3fa3"><div class="sqs-block-content" id="yui_3_17_2_1_1683855625262_347" style="height: 100%; width: 100%;">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-    
-  
-    <div class="image-block-outer-wrapper layout-caption-below design-layout-fluid image-position-left combination-animation-vertical-clip individual-animation-none animation-loaded" data-test="image-block-fluid-outer-wrapper" id="yui_3_17_2_1_1683855625262_346">
-      <div class="fluid-image-animation-wrapper sqs-image sqs-block-alignment-wrapper" data-animation-role="image" data-animation-override="" id="yui_3_17_2_1_1683855625262_345">
-        <div class="fluid-image-container sqs-image-content" style="overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);position: relative;width: 100%;height: 100%;" id="yui_3_17_2_1_1683855625262_344">
-          
-
-          
-          
-
-          
-            
-              <div class="content-fill" id="yui_3_17_2_1_1683855625262_341" style="overflow: hidden;">
-                
-            
-              <noscript>
-                <img src="https://images.squarespace-cdn.com/content/v1/624b503cb1a5b60629568349/1649102917897-I90ZDFFAQTMADXB764NB/2005.37.4_PS2.jpg" alt="" loading="lazy" style="
-                  object-fit: cover;
-                  object-position: calc(0.5 * 100%) calc(0.5 * 100%);
-                "/>
-              </noscript>
-              <img data-src="https://images.squarespace-cdn.com/content/v1/624b503cb1a5b60629568349/1649102917897-I90ZDFFAQTMADXB764NB/2005.37.4_PS2.jpg" data-image="https://images.squarespace-cdn.com/content/v1/624b503cb1a5b60629568349/1649102917897-I90ZDFFAQTMADXB764NB/2005.37.4_PS2.jpg" data-image-dimensions="1387x1107" data-image-focal-point="0.5,0.5" alt="" loading="lazy" data-stretch="true" style="object-fit: cover; object-position: calc(50%) calc(50%); left: 0px; top: -134.867px; width: 675px; height: 538.735px; position: relative;" data-parent-ratio="2.5" class="loaded" data-image-resolution="1500w" src="https://images.squarespace-cdn.com/content/v1/624b503cb1a5b60629568349/1649102917897-I90ZDFFAQTMADXB764NB/2005.37.4_PS2.jpg?format=1500w" id="yui_3_17_2_1_1683855625262_700">
-            
-            
-            <div class="fluidImageOverlay"></div>
-          
-              </div>
-            
-          
-
-        </div>
-      </div>
-    </div>
-    <style>
-      
-
-      
-    </style>
-  
-
-
-  
-
-
-</div></div></div><div class="fe-block fe-block-7b14fe3100bf4518cf53"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-7b14fe3100bf4518cf53"><div class="sqs-block-content">
-
-<div class="sqs-html-content">
-  <p class="" style="white-space:pre-wrap;">We went to hundreds of design conferences, were inspired by countless speakers and made tons of new connections and friends… but always walked away feeling like we were only talking about a fraction of what designers can do. This is an event dedicated to the rest of it.</p>
-</div>
-
-
-
-</div></div></div></div></div>
-    </div>
-  </div>
-  
-  
-</section>
 <body>
 
 <!-- insert svg code here -->
@@ -289,7 +36,7 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
 <style type="text/css">
-  .st0{clip-path:url(#SVGID_00000066503523885790539520000015865890111486844311_);}
+  .st0{clip-path:url(#SVGID_00000181805939129240332110000014781001880034893704_);}
   .st1{fill:#55D1F3;stroke:#8CFF4A;stroke-miterlimit:10;}
   .st2{font-family:'Copperplate';}
   .st3{font-size:60px;}
@@ -301,11 +48,11 @@
   <defs>
     <rect id="SVGID_1_" width="1920" height="1080"/>
   </defs>
-  <clipPath id="SVGID_00000133522135065177895720000005232702846781288086_">
+  <clipPath id="SVGID_00000137091587731057977590000011440505233116239242_">
     <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
   </clipPath>
   
-    <image style="overflow:visible;clip-path:url(#SVGID_00000133522135065177895720000005232702846781288086_);" width="1920" height="1080" xlink:href="data:image/jpeg;base64,/9j/4gxYSUNDX1BST0ZJTEUAAQEAAAxITGlubwIQAABtbnRyUkdCIFhZWiAHzgACAAkABgAxAABh
+    <image style="overflow:visible;clip-path:url(#SVGID_00000137091587731057977590000011440505233116239242_);" width="1920" height="1080" xlink:href="data:image/jpeg;base64,/9j/4gxYSUNDX1BST0ZJTEUAAQEAAAxITGlubwIQAABtbnRyUkdCIFhZWiAHzgACAAkABgAxAABh
 Y3NwTVNGVAAAAABJRUMgc1JHQgAAAAAAAAAAAAAAAAAA9tYAAQAAAADTLUhQICAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABFjcHJ0AAABUAAAADNkZXNjAAAB
 hAAAAGx3dHB0AAAB8AAAABRia3B0AAACBAAAABRyWFlaAAACGAAAABRnWFlaAAACLAAAABRiWFla
@@ -377,10 +124,10 @@ aHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgICAgICAgICAgIHhtbG5zOnBkZj0i
 aHR0cDovL25zLmFkb2JlLmNvbS9wZGYvMS4zLyIKICAgICAgICAgICAgeG1sbnM6aWxsdXN0cmF0
 b3I9Imh0dHA6Ly9ucy5hZG9iZS5jb20vaWxsdXN0cmF0b3IvMS4wLyI+CiAgICAgICAgIDx4bXA6
 Q3JlYXRvclRvb2w+QWRvYmUgSWxsdXN0cmF0b3IgMjcuNSAoTWFjaW50b3NoKTwveG1wOkNyZWF0
-b3JUb29sPgogICAgICAgICA8eG1wOkNyZWF0ZURhdGU+MjAyMy0wNS0xMlQwNzoyODoyMS0wNDow
+b3JUb29sPgogICAgICAgICA8eG1wOkNyZWF0ZURhdGU+MjAyMy0wNS0xMlQwNzozMTo0My0wNDow
 MDwveG1wOkNyZWF0ZURhdGU+CiAgICAgICAgIDx4bXA6TWV0YWRhdGFEYXRlPjIwMjMtMDUtMTJU
-MDc6Mjg6MjEtMDQ6MDA8L3htcDpNZXRhZGF0YURhdGU+CiAgICAgICAgIDx4bXA6TW9kaWZ5RGF0
-ZT4yMDIzLTA1LTEyVDExOjI4OjIxWjwveG1wOk1vZGlmeURhdGU+CiAgICAgICAgIDx4bXA6VGh1
+MDc6MzE6NDMtMDQ6MDA8L3htcDpNZXRhZGF0YURhdGU+CiAgICAgICAgIDx4bXA6TW9kaWZ5RGF0
+ZT4yMDIzLTA1LTEyVDExOjMxOjQzWjwveG1wOk1vZGlmeURhdGU+CiAgICAgICAgIDx4bXA6VGh1
 bWJuYWlscz4KICAgICAgICAgICAgPHJkZjpBbHQ+CiAgICAgICAgICAgICAgIDxyZGY6bGkgcmRm
 OnBhcnNlVHlwZT0iUmVzb3VyY2UiPgogICAgICAgICAgICAgICAgICA8eG1wR0ltZzp3aWR0aD4y
 NTY8L3htcEdJbWc6d2lkdGg+CiAgICAgICAgICAgICAgICAgIDx4bXBHSW1nOmhlaWdodD4xNDQ8
@@ -815,9 +562,9 @@ c1JxS3FRRk5EME5BSzVtaUJEck1rNDlHWjJNVVVjRkQ4YkQ5b1ZBcDQxUDlNRW5FTjJ0dVpnbytF
 QWU1M08mI3hBO1JaeHRLTlJ1MzZjeVFBQU4rbVNjckZFTWR2cmcxTytUaVhOZ0VxbHVCeXl6aWJ4
 RkRYRWl1NUorMXNQRG9LWTJzUlQvQVAvWjwveG1wR0ltZzppbWFnZT4KICAgICAgICAgICAgICAg
 PC9yZGY6bGk+CiAgICAgICAgICAgIDwvcmRmOkFsdD4KICAgICAgICAgPC94bXA6VGh1bWJuYWls
-cz4KICAgICAgICAgPHhtcE1NOkluc3RhbmNlSUQ+eG1wLmlpZDpkMDk2ZWU3Mi1kZTQ0LTQ5MDIt
-YTczMy0wYzc4MjAxZTlhYzE8L3htcE1NOkluc3RhbmNlSUQ+CiAgICAgICAgIDx4bXBNTTpEb2N1
-bWVudElEPnhtcC5kaWQ6ZDA5NmVlNzItZGU0NC00OTAyLWE3MzMtMGM3ODIwMWU5YWMxPC94bXBN
+cz4KICAgICAgICAgPHhtcE1NOkluc3RhbmNlSUQ+eG1wLmlpZDozNjJmNGY1Ni03MDAzLTQwMDkt
+YmYzYS1iNTljOTc5MjkzM2U8L3htcE1NOkluc3RhbmNlSUQ+CiAgICAgICAgIDx4bXBNTTpEb2N1
+bWVudElEPnhtcC5kaWQ6MzYyZjRmNTYtNzAwMy00MDA5LWJmM2EtYjU5Yzk3OTI5MzNlPC94bXBN
 TTpEb2N1bWVudElEPgogICAgICAgICA8eG1wTU06T3JpZ2luYWxEb2N1bWVudElEPnhtcC5kaWQ6
 MmRiMWE1MTQtM2Q5Zi00NGJlLWI2MTgtMTk1MzdkZjljOTJmPC94bXBNTTpPcmlnaW5hbERvY3Vt
 ZW50SUQ+CiAgICAgICAgIDx4bXBNTTpSZW5kaXRpb25DbGFzcz5kZWZhdWx0PC94bXBNTTpSZW5k
@@ -839,17 +586,17 @@ dnQ6c29mdHdhcmVBZ2VudD4KICAgICAgICAgICAgICAgICAgPHN0RXZ0OmNoYW5nZWQ+Lzwvc3RF
 dnQ6Y2hhbmdlZD4KICAgICAgICAgICAgICAgPC9yZGY6bGk+CiAgICAgICAgICAgICAgIDxyZGY6
 bGkgcmRmOnBhcnNlVHlwZT0iUmVzb3VyY2UiPgogICAgICAgICAgICAgICAgICA8c3RFdnQ6YWN0
 aW9uPnNhdmVkPC9zdEV2dDphY3Rpb24+CiAgICAgICAgICAgICAgICAgIDxzdEV2dDppbnN0YW5j
-ZUlEPnhtcC5paWQ6ZDA5NmVlNzItZGU0NC00OTAyLWE3MzMtMGM3ODIwMWU5YWMxPC9zdEV2dDpp
-bnN0YW5jZUlEPgogICAgICAgICAgICAgICAgICA8c3RFdnQ6d2hlbj4yMDIzLTA1LTEyVDA3OjI4
-OjIxLTA0OjAwPC9zdEV2dDp3aGVuPgogICAgICAgICAgICAgICAgICA8c3RFdnQ6c29mdHdhcmVB
+ZUlEPnhtcC5paWQ6MzYyZjRmNTYtNzAwMy00MDA5LWJmM2EtYjU5Yzk3OTI5MzNlPC9zdEV2dDpp
+bnN0YW5jZUlEPgogICAgICAgICAgICAgICAgICA8c3RFdnQ6d2hlbj4yMDIzLTA1LTEyVDA3OjMx
+OjQzLTA0OjAwPC9zdEV2dDp3aGVuPgogICAgICAgICAgICAgICAgICA8c3RFdnQ6c29mdHdhcmVB
 Z2VudD5BZG9iZSBJbGx1c3RyYXRvciAyNy41IChNYWNpbnRvc2gpPC9zdEV2dDpzb2Z0d2FyZUFn
 ZW50PgogICAgICAgICAgICAgICAgICA8c3RFdnQ6Y2hhbmdlZD4vPC9zdEV2dDpjaGFuZ2VkPgog
 ICAgICAgICAgICAgICA8L3JkZjpsaT4KICAgICAgICAgICAgPC9yZGY6U2VxPgogICAgICAgICA8
 L3htcE1NOkhpc3Rvcnk+CiAgICAgICAgIDx4bXBNTTpEZXJpdmVkRnJvbSByZGY6cGFyc2VUeXBl
-PSJSZXNvdXJjZSI+CiAgICAgICAgICAgIDxzdFJlZjppbnN0YW5jZUlEPnhtcC5paWQ6ZmM5OGJm
-YzMtNGUzMi00NWQ5LWJkZjEtYmZhYWU4MTI1OWQ3PC9zdFJlZjppbnN0YW5jZUlEPgogICAgICAg
-ICAgICA8c3RSZWY6ZG9jdW1lbnRJRD54bXAuZGlkOmZjOThiZmMzLTRlMzItNDVkOS1iZGYxLWJm
-YWFlODEyNTlkNzwvc3RSZWY6ZG9jdW1lbnRJRD4KICAgICAgICAgICAgPHN0UmVmOm9yaWdpbmFs
+PSJSZXNvdXJjZSI+CiAgICAgICAgICAgIDxzdFJlZjppbnN0YW5jZUlEPnhtcC5paWQ6NTFhNDA4
+NzQtMjI4YS00YTg3LTlkYmUtYmUzOGQ5MTIyYjZmPC9zdFJlZjppbnN0YW5jZUlEPgogICAgICAg
+ICAgICA8c3RSZWY6ZG9jdW1lbnRJRD54bXAuZGlkOjUxYTQwODc0LTIyOGEtNGE4Ny05ZGJlLWJl
+MzhkOTEyMmI2Zjwvc3RSZWY6ZG9jdW1lbnRJRD4KICAgICAgICAgICAgPHN0UmVmOm9yaWdpbmFs
 RG9jdW1lbnRJRD54bXAuZGlkOjJkYjFhNTE0LTNkOWYtNDRiZS1iNjE4LTE5NTM3ZGY5YzkyZjwv
 c3RSZWY6b3JpZ2luYWxEb2N1bWVudElEPgogICAgICAgICAgICA8c3RSZWY6cmVuZGl0aW9uQ2xh
 c3M+ZGVmYXVsdDwvc3RSZWY6cmVuZGl0aW9uQ2xhc3M+CiAgICAgICAgIDwveG1wTU06RGVyaXZl
@@ -4039,7 +3786,7 @@ BAolNXEgKanFBcSCyCPBBccFqe+4Ca1PkXFW8SAoXTnJhUFkEuSDk0pBcSOxWKeSHC6iUjNFNSGf
 </g>
 <g>
   <defs>
-    <path id="SVGID_00000032630343791193885790000004189824172527574166_" d="M63.65,230.47l-7.63-61.92h11.81l4.54,42.12l4.03-42.12
+    <path id="SVGID_00000070079224995465498750000001436640291300921527_" d="M63.65,230.47l-7.63-61.92h11.81l4.54,42.12l4.03-42.12
       H88.2l-7.63,61.92H63.65z M57.96,144.06V82.21h24.77v11.95H70.56v12.02h11.66v11.66H70.56v14.18h12.96v12.02H57.96z M87.39,144.06
       V81.85h12.82v62.21H87.39z M106.25,231.04c-5.42,0-9.31-1.49-11.66-4.46c-2.35-2.98-3.53-7.42-3.53-13.32v-21.17
       c0-4.85,1.39-8.54,4.18-11.09c2.78-2.54,6.67-3.82,11.66-3.82c10.13,0,15.19,4.97,15.19,14.9v3.82c0,3.84-0.05,6.96-0.14,9.36
@@ -4086,18 +3833,18 @@ BAolNXEgKanFBcSCyCPBBccFqe+4Ca1PkXFW8SAoXTnJhUFkEuSDk0pBcSOxWKeSHC6iUjNFNSGf
       c-0.86,0-1.52,0.25-1.98,0.76c-0.46,0.5-0.68,1.19-0.68,2.05c0,1.92,0.74,3.41,2.23,4.46l7.78,5.69c2.78,2.06,4.92,4.31,6.41,6.73
       c1.49,2.42,2.23,5.48,2.23,9.18c0,4.9-1.39,8.67-4.18,11.3C292.18,229.72,288.29,231.04,283.3,231.04L283.3,231.04z"/>
   </defs>
-  <clipPath id="SVGID_00000036224354919176850580000001335382988758960288_">
-    <use xlink:href="#SVGID_00000032630343791193885790000004189824172527574166_"  style="overflow:visible;"/>
+  <clipPath id="SVGID_00000097489095809744199900000017789771286208801430_">
+    <use xlink:href="#SVGID_00000070079224995465498750000001436640291300921527_"  style="overflow:visible;"/>
   </clipPath>
-  <g style="clip-path:url(#SVGID_00000036224354919176850580000001335382988758960288_);">
+  <g style="clip-path:url(#SVGID_00000097489095809744199900000017789771286208801430_);">
     <defs>
-      <rect id="SVGID_00000083788229121223619480000003694338923291378091_" width="1920" height="1080"/>
+      <rect id="SVGID_00000112597407703712072160000007812888919991471291_" width="1920" height="1080"/>
     </defs>
-    <clipPath id="SVGID_00000159453504493883471890000014759930696002068656_">
-      <use xlink:href="#SVGID_00000083788229121223619480000003694338923291378091_"  style="overflow:visible;"/>
+    <clipPath id="SVGID_00000167396819333747431760000014301748684647744908_">
+      <use xlink:href="#SVGID_00000112597407703712072160000007812888919991471291_"  style="overflow:visible;"/>
     </clipPath>
     
-      <image style="overflow:visible;clip-path:url(#SVGID_00000159453504493883471890000014759930696002068656_);" width="1920" height="1080" xlink:href="data:image/jpeg;base64,/9j/4gxYSUNDX1BST0ZJTEUAAQEAAAxITGlubwIQAABtbnRyUkdCIFhZWiAHzgACAAkABgAxAABh
+      <image style="overflow:visible;clip-path:url(#SVGID_00000167396819333747431760000014301748684647744908_);" width="1920" height="1080" xlink:href="data:image/jpeg;base64,/9j/4gxYSUNDX1BST0ZJTEUAAQEAAAxITGlubwIQAABtbnRyUkdCIFhZWiAHzgACAAkABgAxAABh
 Y3NwTVNGVAAAAABJRUMgc1JHQgAAAAAAAAAAAAAAAAAA9tYAAQAAAADTLUhQICAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABFjcHJ0AAABUAAAADNkZXNjAAAB
 hAAAAGx3dHB0AAAB8AAAABRia3B0AAACBAAAABRyWFlaAAACGAAAABRnWFlaAAACLAAAABRiWFla
@@ -4169,10 +3916,10 @@ aHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgICAgICAgICAgIHhtbG5zOnBkZj0i
 aHR0cDovL25zLmFkb2JlLmNvbS9wZGYvMS4zLyIKICAgICAgICAgICAgeG1sbnM6aWxsdXN0cmF0
 b3I9Imh0dHA6Ly9ucy5hZG9iZS5jb20vaWxsdXN0cmF0b3IvMS4wLyI+CiAgICAgICAgIDx4bXA6
 Q3JlYXRvclRvb2w+QWRvYmUgSWxsdXN0cmF0b3IgMjcuNSAoTWFjaW50b3NoKTwveG1wOkNyZWF0
-b3JUb29sPgogICAgICAgICA8eG1wOkNyZWF0ZURhdGU+MjAyMy0wNS0xMlQwNzoyODoyMS0wNDow
+b3JUb29sPgogICAgICAgICA8eG1wOkNyZWF0ZURhdGU+MjAyMy0wNS0xMlQwNzozMTo0My0wNDow
 MDwveG1wOkNyZWF0ZURhdGU+CiAgICAgICAgIDx4bXA6TWV0YWRhdGFEYXRlPjIwMjMtMDUtMTJU
-MDc6Mjg6MjEtMDQ6MDA8L3htcDpNZXRhZGF0YURhdGU+CiAgICAgICAgIDx4bXA6TW9kaWZ5RGF0
-ZT4yMDIzLTA1LTEyVDExOjI4OjIxWjwveG1wOk1vZGlmeURhdGU+CiAgICAgICAgIDx4bXA6VGh1
+MDc6MzE6NDMtMDQ6MDA8L3htcDpNZXRhZGF0YURhdGU+CiAgICAgICAgIDx4bXA6TW9kaWZ5RGF0
+ZT4yMDIzLTA1LTEyVDExOjMxOjQzWjwveG1wOk1vZGlmeURhdGU+CiAgICAgICAgIDx4bXA6VGh1
 bWJuYWlscz4KICAgICAgICAgICAgPHJkZjpBbHQ+CiAgICAgICAgICAgICAgIDxyZGY6bGkgcmRm
 OnBhcnNlVHlwZT0iUmVzb3VyY2UiPgogICAgICAgICAgICAgICAgICA8eG1wR0ltZzp3aWR0aD4y
 NTY8L3htcEdJbWc6d2lkdGg+CiAgICAgICAgICAgICAgICAgIDx4bXBHSW1nOmhlaWdodD4xNDQ8
@@ -4607,9 +4354,9 @@ c1JxS3FRRk5EME5BSzVtaUJEck1rNDlHWjJNVVVjRkQ4YkQ5b1ZBcDQxUDlNRW5FTjJ0dVpnbytF
 QWU1M08mI3hBO1JaeHRLTlJ1MzZjeVFBQU4rbVNjckZFTWR2cmcxTytUaVhOZ0VxbHVCeXl6aWJ4
 RkRYRWl1NUorMXNQRG9LWTJzUlQvQVAvWjwveG1wR0ltZzppbWFnZT4KICAgICAgICAgICAgICAg
 PC9yZGY6bGk+CiAgICAgICAgICAgIDwvcmRmOkFsdD4KICAgICAgICAgPC94bXA6VGh1bWJuYWls
-cz4KICAgICAgICAgPHhtcE1NOkluc3RhbmNlSUQ+eG1wLmlpZDo1YjJjNjA3Yy05ODY1LTRkYzQt
-OGNmYy03NzMxZjU0N2FkMWM8L3htcE1NOkluc3RhbmNlSUQ+CiAgICAgICAgIDx4bXBNTTpEb2N1
-bWVudElEPnhtcC5kaWQ6NWIyYzYwN2MtOTg2NS00ZGM0LThjZmMtNzczMWY1NDdhZDFjPC94bXBN
+cz4KICAgICAgICAgPHhtcE1NOkluc3RhbmNlSUQ+eG1wLmlpZDpkYWUzMjNiNy1lNDUyLTQzODAt
+OThmZi1jZjgyYjE0NmYzNTQ8L3htcE1NOkluc3RhbmNlSUQ+CiAgICAgICAgIDx4bXBNTTpEb2N1
+bWVudElEPnhtcC5kaWQ6ZGFlMzIzYjctZTQ1Mi00MzgwLTk4ZmYtY2Y4MmIxNDZmMzU0PC94bXBN
 TTpEb2N1bWVudElEPgogICAgICAgICA8eG1wTU06T3JpZ2luYWxEb2N1bWVudElEPnhtcC5kaWQ6
 MmRiMWE1MTQtM2Q5Zi00NGJlLWI2MTgtMTk1MzdkZjljOTJmPC94bXBNTTpPcmlnaW5hbERvY3Vt
 ZW50SUQ+CiAgICAgICAgIDx4bXBNTTpSZW5kaXRpb25DbGFzcz5kZWZhdWx0PC94bXBNTTpSZW5k
@@ -4631,17 +4378,17 @@ dnQ6c29mdHdhcmVBZ2VudD4KICAgICAgICAgICAgICAgICAgPHN0RXZ0OmNoYW5nZWQ+Lzwvc3RF
 dnQ6Y2hhbmdlZD4KICAgICAgICAgICAgICAgPC9yZGY6bGk+CiAgICAgICAgICAgICAgIDxyZGY6
 bGkgcmRmOnBhcnNlVHlwZT0iUmVzb3VyY2UiPgogICAgICAgICAgICAgICAgICA8c3RFdnQ6YWN0
 aW9uPnNhdmVkPC9zdEV2dDphY3Rpb24+CiAgICAgICAgICAgICAgICAgIDxzdEV2dDppbnN0YW5j
-ZUlEPnhtcC5paWQ6NWIyYzYwN2MtOTg2NS00ZGM0LThjZmMtNzczMWY1NDdhZDFjPC9zdEV2dDpp
-bnN0YW5jZUlEPgogICAgICAgICAgICAgICAgICA8c3RFdnQ6d2hlbj4yMDIzLTA1LTEyVDA3OjI4
-OjIxLTA0OjAwPC9zdEV2dDp3aGVuPgogICAgICAgICAgICAgICAgICA8c3RFdnQ6c29mdHdhcmVB
+ZUlEPnhtcC5paWQ6ZGFlMzIzYjctZTQ1Mi00MzgwLTk4ZmYtY2Y4MmIxNDZmMzU0PC9zdEV2dDpp
+bnN0YW5jZUlEPgogICAgICAgICAgICAgICAgICA8c3RFdnQ6d2hlbj4yMDIzLTA1LTEyVDA3OjMx
+OjQzLTA0OjAwPC9zdEV2dDp3aGVuPgogICAgICAgICAgICAgICAgICA8c3RFdnQ6c29mdHdhcmVB
 Z2VudD5BZG9iZSBJbGx1c3RyYXRvciAyNy41IChNYWNpbnRvc2gpPC9zdEV2dDpzb2Z0d2FyZUFn
 ZW50PgogICAgICAgICAgICAgICAgICA8c3RFdnQ6Y2hhbmdlZD4vPC9zdEV2dDpjaGFuZ2VkPgog
 ICAgICAgICAgICAgICA8L3JkZjpsaT4KICAgICAgICAgICAgPC9yZGY6U2VxPgogICAgICAgICA8
 L3htcE1NOkhpc3Rvcnk+CiAgICAgICAgIDx4bXBNTTpEZXJpdmVkRnJvbSByZGY6cGFyc2VUeXBl
-PSJSZXNvdXJjZSI+CiAgICAgICAgICAgIDxzdFJlZjppbnN0YW5jZUlEPnhtcC5paWQ6ZDA5NmVl
-NzItZGU0NC00OTAyLWE3MzMtMGM3ODIwMWU5YWMxPC9zdFJlZjppbnN0YW5jZUlEPgogICAgICAg
-ICAgICA8c3RSZWY6ZG9jdW1lbnRJRD54bXAuZGlkOmQwOTZlZTcyLWRlNDQtNDkwMi1hNzMzLTBj
-NzgyMDFlOWFjMTwvc3RSZWY6ZG9jdW1lbnRJRD4KICAgICAgICAgICAgPHN0UmVmOm9yaWdpbmFs
+PSJSZXNvdXJjZSI+CiAgICAgICAgICAgIDxzdFJlZjppbnN0YW5jZUlEPnhtcC5paWQ6MzYyZjRm
+NTYtNzAwMy00MDA5LWJmM2EtYjU5Yzk3OTI5MzNlPC9zdFJlZjppbnN0YW5jZUlEPgogICAgICAg
+ICAgICA8c3RSZWY6ZG9jdW1lbnRJRD54bXAuZGlkOjM2MmY0ZjU2LTcwMDMtNDAwOS1iZjNhLWI1
+OWM5NzkyOTMzZTwvc3RSZWY6ZG9jdW1lbnRJRD4KICAgICAgICAgICAgPHN0UmVmOm9yaWdpbmFs
 RG9jdW1lbnRJRD54bXAuZGlkOjJkYjFhNTE0LTNkOWYtNDRiZS1iNjE4LTE5NTM3ZGY5YzkyZjwv
 c3RSZWY6b3JpZ2luYWxEb2N1bWVudElEPgogICAgICAgICAgICA8c3RSZWY6cmVuZGl0aW9uQ2xh
 c3M+ZGVmYXVsdDwvc3RSZWY6cmVuZGl0aW9uQ2xhc3M+CiAgICAgICAgIDwveG1wTU06RGVyaXZl
@@ -4975,7 +4722,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/Z">
 </svg>
 
 
-
 <!-- end svg code here -->
 
 <div class="tooltip"></div>
@@ -4987,32 +4733,32 @@ let tooltip=document.querySelector('.tooltip')
 
 // gets position of mouse on the page
 function getpos(event) {
-	var e = window.event;
-	x = e.clientX ;
-	y = e.clientY ;
+  var e = window.event;
+  x = e.clientX ;
+  y = e.clientY ;
 } 
 
 function updateTooltip(text_to_display){
-	tooltip.innerHTML=text_to_display
-	getpos()
-	tooltip.style.opacity=1
-	tooltip.style.left=x+30+"px"
-	tooltip.style.top=y-30+"px"
+  tooltip.innerHTML=text_to_display
+  getpos()
+  tooltip.style.opacity=1
+  tooltip.style.left=x+30+"px"
+  tooltip.style.top=y-30+"px"
 }
 
 function updateImgTooltip(img_to_display){
-	tooltip.innerHTML=''
-	tooltip.style.opacity=1
-	picture = document.createElement('img')
-	picture.src=img_to_display
-	tooltip.appendChild(picture)
-	getpos()
-	tooltip.style.left=x+30+"px"
-	tooltip.style.top=y-30+"px"
+  tooltip.innerHTML=''
+  tooltip.style.opacity=1
+  picture = document.createElement('img')
+  picture.src=img_to_display
+  tooltip.appendChild(picture)
+  getpos()
+  tooltip.style.left=x+30+"px"
+  tooltip.style.top=y-30+"px"
 }
 
 function clearTooltip() {
-	tooltip.style.opacity=0
+  tooltip.style.opacity=0
 }
 
 </script>
